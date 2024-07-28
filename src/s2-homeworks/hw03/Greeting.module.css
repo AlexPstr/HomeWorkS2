@@ -2,34 +2,76 @@
 }
 
 .inputAndButtonContainer {
-}
+    display: flex;
 
+}
+.inputAndButtonContainer div {
+    max-width: 372px;
+    width: 100%;
+    margin-right: 12px;
+}
 .error {
+    color: red;
+    margin-top: 8px;
 }
-
+.inputAndButtonContainer div {
+    max-width: 372px;
+    width: 100%;
+    margin-right: 12px;
+}
 .input {
+    max-width: 372px;
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+
 }
 
 .input:focus {
 }
-
+.errorInput.input:focus {
+    outline: none;
+    border: 2px solid red;
+}
 .errorInput {
+    border: 1px solid red;
 }
 
 .button {
+    max-width: 78px;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #0066cc;
 }
 
 .button:focus {
+    background-color: #3c5d8a;
 }
 
 .button:active {
+    background-color: #3c5d8a;
 }
 
 .button:disabled {
+    opacity: 0.5;
 }
 
 .text {
+    color: #00000080;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .greeting {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
 }
