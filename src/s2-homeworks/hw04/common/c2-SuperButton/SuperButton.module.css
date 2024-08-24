@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .disabled {
@@ -17,10 +18,13 @@
 .secondary {
     border: 2px solid #0066CC;
     background-color: white;
-    width: 176px;
+    color: #0066CC;
+    font-weight: 600;
+    width: 132px;
 }
 
 .default {
+    font-weight: 600;
     border: none;
     background-color: blue;
     color: white;

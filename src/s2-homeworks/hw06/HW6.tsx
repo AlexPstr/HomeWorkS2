@@ -13,13 +13,14 @@ import s from './HW6.module.css'
 
 const HW6 = () => {
     const [value, setValue] = useState<string>('')
-
+    const spanActive = true
     const save = () => {
         saveState<string>('hw6-editable-span-value', value)
     }
-    const restore = () => {
-        // делают студенты
 
+    const restore = () => {
+
+        setValue(restoreState('hw6-editable-span-value', value ))
     }
 
     return (
@@ -35,13 +36,13 @@ const HW6 = () => {
                         onChangeText={setValue}
                         spanProps={{
                             id: 'hw6-editable-span',
-                            defaultText: 'enter text...',
+                            defaultText: 'Edit text',
                         }}
                     />
                 </div>
 
                 <div className={s.buttonsContainer}>
-                    <SuperButton id={'hw6-save'} onClick={save}>
+                    <SuperButton id={'hw6-save'} onClick={save} >
                         Save to ls
                     </SuperButton>
                     <SuperButton
